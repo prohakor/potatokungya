@@ -1,15 +1,27 @@
 <html>
-    <head>
-        <meta charset = "UTF-8">
-        <title> 이편지는 영국에서부터 시작되어 </title>
-        <link rel="stylesheet" href="style.css">
-    </head>
+  <head>
+    <meta charset="UTF-8" />
+    <title>수진이 바보</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
 
-    <body>
-        <h2 id="hello"> 안녕하세요 </h2>
-        <div class="alert-box">Alert 박스</div>
-        <script>
-            document.getElementById('hello').innerHTML = '냠';
-        </script>
-    </body>
+  <body>
+    <div class="alert-box" id="alert">
+      <p>Alert 박스</p>
+      <button onclick="close()">delete</button>
+    </div>
+    <button onclick="fuck()">
+      button
+    </button>
+    
+    <script>
+      function fuck() {
+        document.getElementById("alert").style.display = "block";
+      }
+      function close() {
+        document.getElementById("alert").style.display = "none";
+      }
+    </script>
+  </body>
 </html>
+<!-- Alert Box 버튼으로 띄우고 버튼으로 지우기 to my repo-->
